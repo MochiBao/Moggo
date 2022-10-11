@@ -1,0 +1,170 @@
+/*global*/
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    /* align center for block*/
+    margin: 0 auto;
+    
+}
+
+/*header*/
+.header{
+    padding: 17px 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.menu_list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    column-gap: 55px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu_list li{
+    text-transform: uppercase;
+}
+
+.menu_list li a{
+    color: #95E1D3;
+    text-decoration: none;
+    font-family: 'Montserrat-Bold';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+}
+
+.menu_list a{
+    transition: color 0.3s;
+    display: block;
+}
+
+.menu_list a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #F38181;
+    transition: width 0.3s;
+}
+
+.menu_list a:hover{
+    color: #F38181;
+    transition: color 0.3s;
+}
+
+.menu_list a:hover::after{
+    width: 100%;
+}
+
+
+ /*main chapter*/
+ 
+.info-block{
+    text-align: center;
+}
+
+.info-block .uptitle{
+    margin: 0;
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+}
+.info-block h2{
+    margin: 20px 0 40px;
+    font-size: 30px;
+    line-height: 37px;
+    font-variant: small-caps;
+    color: #333333;
+}
+
+.info-block hr{
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    margin: 0 auto;
+    background: #F38181;
+    border: none;
+}
+
+.services-list{
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+
+.services-item{
+    width: 33.333%;
+    padding: 0 35px;
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+}
+
+.services-item img{
+    width: 37px;
+}
+
+.services-item h3{
+    margin: 0 0 20px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+
+
+
+

@@ -162,7 +162,85 @@ line-height: 17px;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    text-align: center;
 }
+
+.team-list{
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.teammember{
+width: calc(33.333% - (60px / 3));
+} 
+
+.teammember h3{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-variant: small-caps;
+}
+
+.img-wrapper{
+    position: relative;
+}
+
+
+.img-wrapper::before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+    opacity: 0; /*прозорість*/
+
+}
+
+.img-wrapper:hover::before{
+    opacity: 1;
+
+}
+
+.img-wrapper img{
+    display: block;
+}
+
+.social_list{
+    display: flex;
+    position: absolute;
+    column-gap: 1px;
+    top: calc(50% - 57px / 2);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social_item{
+    height: 57px;
+    width: 57px;
+    left: 50%;
+    background: chocolate;
+}
+
+.social_item:hover{
+    background: darkblue;
+}
+.social_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.social_link img{
+    height: 26px;
+
+}
+
 
 
 
